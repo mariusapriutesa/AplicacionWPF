@@ -6,7 +6,32 @@
         xmlns:local="clr-namespace:jemplo2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button>dss</Button>
-    </Grid>
+    <StackPanel HorizontalAlignment="Left" Margin="0,0,-0.4,0" Width="794" Background="#FF738FC7" >
+
+        <TextBlock Margin="20,20" HorizontalAlignment="Center" FontWeight="Bold" FontSize="22">Alta Usuario</TextBlock>
+        <Grid Margin="107,0,111.6,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0"><Run Text="NOMBRE"/></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0"><Run Text="APELLDOS"/></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0"><Run Text="EDAD"/></TextBlock>
+            <TextBox Grid.Row="0" Grid.Column="1"/>
+            <TextBox Grid.Row="1" Grid.Column="1"/>
+            <TextBox Grid.Row="2" Grid.Column="1"/>
+            <Button Grid.ColumnSpan="2" Grid.Column="2" Margin="84,61.2,99.2,-89.2" Grid.Row="3" Click="Button_Click"> Login</Button>
+        </Grid>
+
+    </StackPanel>
+
+
 </Window>
